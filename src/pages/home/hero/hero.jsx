@@ -27,7 +27,7 @@ const Hero = () => {
             initial={{ y: 60, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-6xl leading-[68px] font-medium text-black/70"
           >
             Enhance Your Coffee <br />
@@ -36,7 +36,7 @@ const Hero = () => {
           <motion.p
             initial={{ y: 40, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
             viewport={{ once: true, amount: 0.2 }}
             className="mt-8"
           >
@@ -46,7 +46,7 @@ const Hero = () => {
           <motion.button
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
             className="py-3 px-8 rounded-full bg-primary text-white mt-16 text-sm font-medium"
           >
@@ -61,9 +61,9 @@ const Hero = () => {
                 initial={{ x: -30, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.4,
                   ease: "easeOut",
-                  delay: index * 0.15,
+                  delay: index * 0.25,
                 }}
                 viewport={{ once: true, amount: 0.2 }}
                 className={`h-11 w-11 border-2 border-white rounded-full object-cover ${
@@ -75,7 +75,7 @@ const Hero = () => {
             <motion.div
               initial={{ x: -30, opacity: 0, scale: 0.8 }}
               whileInView={{ x: 0, opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: 1 }}
               viewport={{ once: true, amount: 0.2 }}
               className="h-11 w-11 border-2 border-white rounded-full flex items-center justify-center -ml-3 text-primary text-xs bg-orange-100 relative z-[-1]"
             >
@@ -88,14 +88,14 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
             className=""
           >
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1, rotate: 20 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: false, amount: 0.2 }}
               className="bg-[#754E1A]/10 h-[380px] w-[380px] rounded-full center relative"
             >
@@ -103,7 +103,7 @@ const Hero = () => {
                 src={coffee}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                transition={{ duration: 0.4, ease: "easeOut", delay: 0.4 }}
                 viewport={{ once: false, amount: 0.2 }}
                 className="h-[400px] mt-24 z-10 relative"
               />
@@ -111,7 +111,7 @@ const Hero = () => {
               <motion.div
                 initial={{ opacity: 0, y: -10, rotate: -10 }}
                 whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+                transition={{ duration: 0.4, ease: "easeOut", delay: 0.6 }}
                 viewport={{ once: false, amount: 0.2 }}
                 className="absolute -right-12 top-1/2 rotate-[5deg]"
               >
@@ -138,7 +138,7 @@ const Hero = () => {
               src={coffeecup}
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: false, amount: 0.2 }}
               className="h-64 mt-24"
             />
@@ -147,7 +147,7 @@ const Hero = () => {
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
             className="flex justify-end mt-60"
           >
@@ -159,7 +159,7 @@ const Hero = () => {
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
-                  delay: index * 0.3,
+                  delay: index * 0.25,
                 }}
                 viewport={{ once: true, amount: 0.2 }}
                 className="flex items-center"

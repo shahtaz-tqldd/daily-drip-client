@@ -27,7 +27,7 @@ const HomeProducts = () => {
         spececialities, fruit smoothis and frozen treats
       </motion.p>
 
-      <div className="grid grid-cols-4 gap-6 mt-32">
+      <div className="grid grid-cols-4 gap-x-6 gap-y-24 mt-32">
         {products?.map((product, index) => (
           <motion.div
             key={index}
@@ -40,7 +40,7 @@ const HomeProducts = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
             className="rounded-xl"
-            style={{ background: colors[index] }}
+            style={{ background: colors[index%colors.length] }}
           >
             <motion.img
               src={product.img}

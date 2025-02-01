@@ -39,7 +39,7 @@ const Feedback = () => {
                 ease: "easeOut",
                 delay: 0.3,
               }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               className="relative"
             >
               <div className="absolute left-10 -top-6 bg-background px-3 rotate-180">
